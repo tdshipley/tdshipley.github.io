@@ -1,25 +1,42 @@
 ---
 layout: page
-title: About
+title: About Thomas Shipley
 permalink: /about/
 ---
-My name is Thomas Shipley I am a contract SDET in London. Here I write about coding; writing, testing, tooling and occasionally softer skills like interviewing. My first language was C# which I currently work in. I have also worked in:
+## Writing Code to Help Developers Learn More About there Own
 
-  * PHP
-  * Python
-  * Ruby
+__My career is focused on understanding what others in a team are doing.__ The impacts
+of code change developers make, features BA's plan and managing expectations of product
+owners. However, most of my time is spent with the developers.
 
-I have played around with C and Go in my spare time.
+With developers, I write code to hopefully make there lives easier. It could be helping
+understand functional changes to a UI or non-functional changes such as performance or
+API contract changes.
+
+Here I write about my experiences helping these teams so I can hopefully
+remind myself in the future when I forget things I have done but
+also help you and your team.
 
 ![Me at the Equal Experts Conference 2019](/assets/img/2019/05/DSC_1122.jpg)
 
-Currently on assignment at [Equal Experts](https://www.equalexperts.com/) as a Senior QA Consultant. Other interesting experience includes:
+# Notable Past Projects
 
-  * [New Orbit](https://www.neworbit.co.uk) as a Web Application Engineer working with ASP.NET Core.
-  * My experience as a tester includes: 
-      * [Just Eat](https://www.just-eat.co.uk/) leading the QA process for the order team in the UK and international markets. As well as leading internal Hackathons and Workshops.
-      * [DataSift](http://datasift.com) a big data platform consuming social media data most notably from Facebook.
-      * [Numero](http://www.thisisnumero.com) a machine learning application for call centre agents.
-      * Microsoft (Contract Role) on the [Forza Horizon 2](http://www.forzamotorsport.net/en-us/games/fh2) project focusing on testing performance.
+## Current
+
+[Equal Experts](https://www.equalexperts.com/) as a Senior QA Consultant.
+Working at John Lewis.
+
+## Past
+
+  * [Just Eat](https://www.just-eat.co.uk/) leading the QA process for the order team 
+  in the UK and international markets. As well as leading internal Hackathons and Workshops.
+  * [DataSift](http://datasift.com) a big data platform consuming social media data
+  most notably from Facebook.
+  * [Numero](http://www.thisisnumero.com) a machine learning application
+  for call centre agents.
+  * Microsoft (Contract Role) on the[Forza Horizon 2](http://www.forzamotorsport.net/en-us/games/fh2) project focusing on testing performance.
+  * [New Orbit](https://www.neworbit.co.uk) as a Web Application Engineer
+  working with ASP.NET Core.
+  
 
 ![Credits from Forza Horizon 2](/assets/img/2015/06/10320914_10152286990287251_1792010311105007939_o.jpg)
