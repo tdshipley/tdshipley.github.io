@@ -35,7 +35,7 @@ Working at John Lewis.
   most notably from Facebook.
   * [Numero](http://www.thisisnumero.com) a machine learning application
   for call centre agents.
-  * Microsoft (Contract Role) on the[Forza Horizon 2](http://www.forzamotorsport.net/en-us/games/fh2) project focusing on testing performance.
+  * Microsoft (Contract Role) on the [Forza Horizon 2](http://www.forzamotorsport.net/en-us/games/fh2) project focusing on testing performance.
   * [New Orbit](https://www.neworbit.co.uk) as a Web Application Engineer
   working with ASP.NET Core.
   
