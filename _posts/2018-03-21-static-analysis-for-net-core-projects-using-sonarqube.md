@@ -61,7 +61,35 @@ One issue to note is you will probably want to differentiate between PR builds a
 
 SonarQube keeps a track of your latest build results to compare the next build to for purpose of its Quality Gate. However, for PR builds you probably don't want the results stored as you want to always compare the PR build to latest results from _master _otherwise a developer could just rebuild their branch in CI and the new issues previously found would no longer be new and disappear! Below is a PowerShell script I have used in teams to do this differentiation between PR and master branches:
 
-https://gist.github.com/tdshipley/1dc55fcd96877943465ed5953be02788
+```powershell
+$github_branch_refs_parts = "%teamcity.build.branch%" -split "/"
+$is_pr = ($github_branch_refs_parts.Count -eq 2 -and $github_branch_refs_parts[1] -eq "merge")
+
+if (-Not $is_pr) {
+    Write-Host "Running SonarQube in master branch mode"    
+    SonarQube.Scanner.MSBuild.exe begin /k:"%sonar.project%" /d:"sonar.host.url=%sonar.host.url%" /d:sonar.cs.dotcover.reportsPaths="dotCover.html" /v:"%build.number%"
+} else {
+    Write-Host "Running SonarQube in PR Mode"
+
+    $pull_request_number = $github_branch_refs_parts[0]
+    $repo = "%repo_owner%" + "/" + "%name%"
+
+    $command = 'SonarQube.Scanner.MSBuild.exe' +
+    ' begin' + 
+    ' /k:' + '%sonar_project%' + 
+    ' /v:' + "%build_number%" +
+    ' /d:sonar.host.url=' + "%sonar_hosturl%" +
+    ' /d:sonar.github.pullRequest=' + $pull_request_number +
+    ' /d:sonar.github.repository=' + $repo +
+    ' /d:sonar.github.oauth=' + "%sonarqube_github_oauth_token%" +
+    ' /d:sonar.analysis.mode=' + "preview" +
+    ' /d:sonar.scanAllFiles=' + "true" +
+    ' /d:sonar.github.endpoint=' + "%github_api_endpoint%"
+
+    Write-Host $command 
+    Invoke-Expression $command
+}
+```
 
 The key difference between the two _SonarQube.Scanner.MSBuild.exe_ commands is in the analysis mode [_Preview_](https://blog.sonarsource.com/analysis-vs-preview-vs-incremental-preview-in-sonarqube/) the results are not saved by the SonarQube server so the comparison is always done against the latest _master_ build instead.
 

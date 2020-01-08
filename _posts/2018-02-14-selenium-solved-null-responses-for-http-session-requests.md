@@ -11,7 +11,10 @@ categories:
 ---
 Recently I was updating the UI tests in a project now Selenium Webdriver plays nice with .NET Core. And came across a strange error:
 
-https://gist.github.com/tdshipley/c3bdb107797ef17901bb5b33da776f18
+```
+OpenQA.Selenium.WebDriverException : A exception with a null response was thrown sending an HTTP request
+to the remote WebDriver server for URL http://localhost:51027/session/71f17e73965ce00cdd20434b035cdce2/element
+```
 
 What made this a strange error is it is a failure to communicate with the **Webdriver Server**, not my underlying application and because of this failure in communication Webdriver could not manipulate my website.
 

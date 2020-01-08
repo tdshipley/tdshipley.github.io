@@ -15,7 +15,46 @@ Until RC2 of ASP.NET Core, the responsibility for building a project was handle
 
 One of the quirks during the transition to the .NET CLI from DNX was my project failed to compile. This was due to a node package that didn't support .NET Core. Luckily the fix is straightforward - but perhaps a little hidden to someone unfamiliar. Within your _project.json _in the _buildOptions_ section a _compile_ object can be added with a property called _exclude._ This is a list of folders to be ignored when compiling the project.
 
-https://gist.github.com/tdshipley/249e1c19d1a794db917b513b912cc0e4
+```json
+{
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true,
+    "compile": {
+      "exclude": [ "node_modules" ]
+    }
+  },
+  "tools": {
+    "SomeToolsRemovedForBrevity": true
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "dotnet5.6",
+        "dnxcore50",
+        "portable-net45+win8"
+      ]
+    }
+  },
+  "dependencies": {
+    "SomeDependenciesRemovedForBrevity": true
+  },
+  "publishOptions": {
+    "include": [
+      "wwwroot",
+      "node_modules",
+      "**.user",
+      "**.vspscc"
+    ]
+  },
+  "scripts": {
+    "prepublish": [ "some", "prepublish", "steps" ],
+    "watch": [ "gulp watch" ]
+  },
+  "userSecretsId": "somescerets",
+  "version": "1.0.1-*"
+}
+```
 
 With this in place, the node_modules folder in the project is ignored and the code compiles successfully.
 

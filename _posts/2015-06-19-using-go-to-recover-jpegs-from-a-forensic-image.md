@@ -59,7 +59,15 @@ Of course, if the card had not been zero wiped this part would become a lot hard
 
 There were a few interesting differences in Go compared to other languages I had worked in. Quite a few are shown the snippet below:
 
-https://gist.github.com/tdshipley/63476e35f48cc88c52b4
+```go
+func isJPEG(fileBlock []byte) (result bool)  {
+  result = false
+  if (fileBlock[0] == 0xff && fileBlock[1] == 0xd8 && fileBlock[2] == 0xff && (fileBlock[3] == 0xe0 || fileBlock[3] == 0x0e1))   {
+    result = true
+  }
+  return result
+}
+```
 
 ### Function Declarations - Type Position and Named Return Variables
 
@@ -92,7 +100,13 @@ In Go, you can declare the variable that will be returned in the function declar
 
 There is more to be learnt when inspecting the body of _isJPEG_:
 
-https://gist.github.com/tdshipley/f0ffc976c9e3e13c578f
+```go
+result = false
+if (fileBlock[0] == 0xff && fileBlock[1] == 0xd8 && fileBlock[2] == 0xff && (fileBlock[3] == 0xe0 || fileBlock[3] == 0x0e1))   {
+  result = true
+}
+return result
+```
 
   * Go uses semicolons to mark the end of a statement. But there are no semicolons in my function above. The Go lexer inserts them for you following a rule defined in [Effective Go](https://golang.org/doc/effective_go.html#semicolons):  
     * * *
@@ -103,7 +117,11 @@ This is a little difficult to parse but in simpler terms means _if you create a
 
 This is why a curly brace must be on the same line as the statement - for example, an if statement:
 
-https://gist.github.com/tdshipley/abeb20c7cbbd5b03c1bf
+```go
+if (fileBlock[0] == 0xff && fileBlock[1] == 0xd8 && fileBlock[2] == 0xff && (fileBlock[3] == 0xe0 || fileBlock[3] == 0x0e1))   {
+  result = true
+}
+```
 
 If the curly brace was moved from the end of the if statement the last token would be a closing parenthesis. This would have a semicolon after it so one would be inserted by the lexer and your code would be syntactically incorrect.
 
@@ -145,7 +163,20 @@ There are two more unusual bits of Go I found through my exploration that deserv
 
 In Go, you can defer a function call to be executed immediately before the executing function returns. A good example is freeing resources like an open file:
 
-https://gist.github.com/tdshipley/231bd1b3c696bd3357f3
+```go
+// Taken from https://golang.org/doc/effective_go.html#defer
+func Contents(filename string) (string, error) {
+  f, err := os.Open(filename)
+  if err != nil {
+      return "", err
+  }
+  
+  defer f.Close()  // f.Close will run when we're finished.
+  
+  var result []byte
+  return string(result), nil // f closed here
+}
+```
 
 Here the file is opened and after error checking a function call to _f.close()_ is deferred. Just before the function returns the close function will be called.
 
@@ -155,7 +186,11 @@ Now you no longer need to remember to close just defer when opening a file.
 
 In _if, for _and _switch_ you do not need parentheses however you can use them when you want to force an order of operations:
 
-https://gist.github.com/tdshipley/eb664fb9f82fc2be12f7
+```go
+if fileBlock[0] == 0xff && fileBlock[1] == 0xd8 && fileBlock[2] == 0xff && (fileBlock[3] == 0xe0 || fileBlock[3] == 0x0e1)   {
+  result = true
+}
+```
 
 Here I have updated the if statement for finding a JPEG. Now it only uses parentheses where they are needed at the end of the if statement around the or (||).
 

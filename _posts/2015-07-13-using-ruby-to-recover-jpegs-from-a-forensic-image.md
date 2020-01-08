@@ -35,11 +35,15 @@ Ruby has a few concepts which can make it quite different from other languages.
 
 When Ruby developers tell you everything is an object they really mean it. Everything is an object of a corresponding class even the Ruby equivalent to _NULL_, _nil _which is an object of the [NilClass](http://ruby-doc.org/core-2.2.2/NilClass.html). Consider the line below:
 
-https://gist.github.com/tdshipley/c35079c3c20411e9119d
+```ruby
+x = 4 + 1
+```
 
 This is syntactically correct Ruby code which as expected stores the number five in the variable _x_. But this is just syntactic sugar for calling the addition method on the four object. It could also be written as:
 
-https://gist.github.com/tdshipley/7bbea40c3fc4ca0233be
+```ruby
+x = 4+(1)
+```
 
 While strange looking this is syntactically correct. The reason the syntactic sugar works is because of another Ruby feature.
 
@@ -49,17 +53,32 @@ The Ruby idiom _Poetry Mode_ is an idiomatic pattern often found in Ruby code i
 
   * The omission of characters which are not needed by the parser to understand the intent of your code.
 
-https://gist.github.com/tdshipley/fca27698ca88bc026b05
+```ruby
+out_file.close unless out_file.nil?
+```
 
 The code above omits parenthesis in order to be more readable it could of also been written like this:
 
-https://gist.github.com/tdshipley/89e0571d91930e90e348
+```ruby
+out_file.close() unless out_file.nil?()
+```
 
   * Using hashes as the single parameter to a method which in turn take multiple parameters.
 
 This style is quite often used in Ruby code to accept multiple optional parameters in a clean way. It is similar to the concept of Named Arguments in other languages like _C# _for example:
 
-https://gist.github.com/tdshipley/147e3aa1ceb5b933fe9b
+```ruby
+def method(regular_variable, hash_variable={})
+    # Internal workings of the method which expects
+    # one variable and some optional named ones 
+end
+
+method "12", a: "14"
+method "13", b: "15"
+method "13", b: "15", a: "14"
+method "13", b: "15", a: "14"
+method "13", { b: "15", a: "14" }
+```
 
 A hash in Ruby is an associative array. Above there is a method which takes a normal variable and a hash. Because this is a hash it can be passed multiple key/value pairs but none of them is required (at least by the method signature). The last usage example shows the full syntax of declaring a hash but because of the first point, this is not needed.
 
@@ -69,13 +88,19 @@ Poetry mode, however, can confuse the parser so if in doubt about the order of o
 
 Method names can contain special characters which are why in the addition example from earlier is named the _+()_ method. But it also leads to some idiomatic conventions such as using a question mark (?) for methods that return a boolean value:
 
-https://gist.github.com/tdshipley/88f967454dba97205a2f
+```ruby
+until file.eof?
+```
 
 Above is the beginning of an until block (like a while block) which will continue looping until the e_of?_ the method returns true.
 
 For methods which perform dangerous actions like throwing an error or editing a variable in place then an exclamation mark or otherwise known as a bang (!) is commonly added:
 
-https://gist.github.com/tdshipley/2f3a1cbbcf814ddf7092
+```ruby
+x = hEllO
+x.downcase # returns "hello" x == hEllO
+x.downcase!   #=> x == "hello"
+```
 
 Above the first method call is to the _downcase _method which will return a copy of the string while the variable _x _remains unchanged - _downcase! _however, will edit the string in place changing the content of the variable.
 
@@ -83,7 +108,9 @@ Above the first method call is to the _downcase _method which will return a co
 
 Strings which are enclosed in double quotes can have values interpolated into them while ones enclosed in single quotes cannot. This leads to an idiomatic convention of only using double quotes when you need to interpolate a value:
 
-https://gist.github.com/tdshipley/cd8c795da33685a798a6
+```ruby
+puts "#{getFilename(filenumber)}.jpeg"
+```
 
 Using the #{} syntax the string can have Ruby code embedded into it - the value resulting from it is added into the string. In the case above as part of my solution, I create a file name using the value returned from the method _getFilename._
 
@@ -95,7 +122,15 @@ Throughout my code you will notice by now there are no semicolons like _Go_ the
 
 When I solved this problem in Ruby I found file encodings to be an issue when comparing the bytes read in from the image file to hexadecimal values - unlike Go. We can see this in the _isJPEG?_ method:
 
-https://gist.github.com/tdshipley/85508efbe53b3691ca72
+```ruby
+# @param [Object] block A 512 byte block to check if it contains a jpeg header in first 4 bytes
+def isJPEG?(block)
+  # Encodings are diff between reading an image file and strings so block[0] == 0xFF wont work
+  # http://stackoverflow.com/questions/16815308/ruby-comparing-hex-value-to-string
+  jpeg_header_part = ['FFD8FF'].pack('H*')
+  return block[0,3] == jpeg_header_part && (block[3] == 0xe0.chr || block[3] == 0x0e1.chr)
+end
+```
 
 Reading the bytes from my file return a 512 byte ASCII encoded string. But my code was encoded in UTF-8 so the comparisons would not work. There is a couple of solutions to this explained well by [Stefan](http://stackoverflow.com/questions/16815308/ruby-comparing-hex-value-to-string) at StackOverflow. Above I decided on two options:
 

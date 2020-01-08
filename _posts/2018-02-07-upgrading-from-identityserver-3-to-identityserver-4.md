@@ -16,7 +16,22 @@ Upgrading from IdentityServer 3 to 4 isn't too tricky but there are some traps y
 
 Scopes in IdentityServer 3 were used to define a resource and the secret required to get access to that resource. Now, this class has been updated to an [API Resource](http://docs.identityserver.io/en/release/reference/api_resource.html) as an example of how the new object might look like:
 
-https://gist.github.com/tdshipley/ce3548db5e2882290ad1d5d241fe425e
+```json
+{
+  "Name": "MyApiRescource",
+  "ApiSecrets": [
+    {
+      "Value": "MyAPIResouceSecret"
+    }
+  ],
+  "Scopes": [
+    {
+      "Name": "MyScopeName",
+      "DisplayName": "My Scope Display Name"
+    }
+  ]
+}
+```
 
 As you can see above the Scopes are now handled as a property of an API Resource. Clients now request an API Resource and a valid associated scope. If you forget to add the Scopes as I did you will get invalid Scope errors when trying to request a authorisation token so be careful to include them!
 

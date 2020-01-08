@@ -19,4 +19,32 @@ Below is an example of how to use HttpClient to make a GET request to your targe
 
 Most of the code is straightforward enough. The only subtlety is adding a _User-Agent_ header which is required by the GitHub API. It is added at line 21 which creates the User-Agent in the JSON header of the request.
 
-https://gist.github.com/tdshipley/869630ea14abd246310f
+```csharp
+namespace API.Controllers
+{
+    public class GithubController : ApiController
+    {
+        private const string _address = "https://api.github.com/users/tdshipley";
+        private const string _userAgent = "TestApp";
+
+        // GET api/<controller>
+        public async Task<string> Get()
+        {
+            var result = await GetAsync(_address);
+
+            return result.ToString();
+        }
+
+        private async Task<JObject> GetAsync(string uri)
+        {
+            HttpClient client = new HttpClient();
+
+            client.DefaultRequestHeaders.Add("Authorization", "token ADD YOUR OAUTH TOKEN");
+            client.DefaultRequestHeaders.Add("User-Agent", _userAgent);
+            var content = await client.GetStringAsync(uri);
+
+            return JObject.Parse(content);
+        }
+    }
+}
+```

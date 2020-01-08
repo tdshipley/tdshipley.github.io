@@ -21,11 +21,32 @@ Before starting this guide I assume you have a superficial level of Docker knowl
 
 To use SonarQube you need to be running the server somewhere. We will use [Docker](https://www.docker.com/). It will download a docker image which contains SonarQube for us already configured and set it up as a container on your machine. To do this open your command window and type:
 
-https://gist.github.com/tdshipley/a43d9ca82a309f6c793a200029fb7581
+```bash
+docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
+```
 
 The output of this command should look similar to:
 
-https://gist.github.com/tdshipley/5d2f410b8b07f8e2ae96f49a40d1f11b
+```bash
+Unable to find image 'sonarqube:latest' locally
+latest: Pulling from library/sonarqube
+bc9ab73e5b14: Pull complete 
+193a6306c92a: Pull complete 
+e5c3f8c317dc: Pull complete 
+a587a86c9dcb: Pull complete 
+a4c7ee7ef122: Pull complete 
+a7c0dad691e9: Pull complete 
+367a6a68b113: Pull complete 
+60c0e52d1ec2: Pull complete 
+c9d22bc43935: Pull complete 
+884af0bfbb9a: Pull complete 
+35a8cd0c916a: Pull complete 
+9f9ecbe7a343: Pull complete 
+af800bded4f3: Pull complete 
+Digest: sha256:cc57b262ee9e7145456dee8c7ae24622c82b22cabeaac4651e7dd642da806f2e
+Status: Downloaded newer image for sonarqube:latest
+a263b203864adc366919ba9cde3cde87542c96046af7a8b9d7ebc1f155ec2204
+```
 
 This will download the latest SonarQube image from Docker Hub and will set up a container using it. To start your server you just need to run this container.
 
@@ -33,7 +54,11 @@ This will download the latest SonarQube image from Docker Hub and will set up a 
 
 Now if you run: `docker container ls` in your command window you should see your container named _sonarqube -_ for example:
 
-https://gist.github.com/tdshipley/1680940db223e2d320acb2a2fec6098e
+```
+My-MacBook-Pro:kotlin thomas$ docker container ls
+CONTAINER ID   IMAGE       COMMAND         CREATED           STATUS            PORTS                                            NAMES
+68be74d0aa51   sonarqube   "./bin/run.sh"  About an hour ago Up About an hour  0.0.0.0:9000->9000/tcp, 0.0.0.0:9092->9092/tcp   gracious_noyce
+```
 
 Now you are ready to start the SonarQube server using the `docker run sonarqube` command. If this was successful you should see your command window fill with text about the server starting and once loaded be able to see the dashboard at `http://localhost:9000`. Now you can scan your project.
 
@@ -41,11 +66,39 @@ Now you are ready to start the SonarQube server using the `docker run sonarqube`
 
 To have some results in your proof of concept SonarQube server you need to scan a project. [Sonarqube supports a host of languages](https://www.sonarqube.org/features/multi-languages/) so pick a project written in a supported language (you may need to install a plugin). Next, make sure you have the [Sonar-Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner) application which you can run from your command window. But before you run it at the root of your project add a _sonar-project.properties_ file. This will tell the scanner a bit about your project and where to send the results. Below is an example of the minimum required information:
 
-https://gist.github.com/tdshipley/e12f7287e83ce46aeafd2f80e9038656
+```
+#----- SonarQube server
+sonar.host.url=http://localhost:9000
+
+#----- Project Key
+sonar.projectKey=4a27fa8c666747f6956d75ae63fb24b9
+
+#----- Project Name
+sonar.projectName=MyProjectName
+
+#----- Project Version
+sonar.projectVersion=1.0
+
+#----- Source files (relative)
+sonar.sources=.
+```
 
 The projectKey needs to be unique to your project on the SonarQube server and the rest is self-explanatory. With all this in place with your command line in the root of the project where the sonar-scanner is located (unless you have installed it in another way such as with [Homebrew](https://brew.sh/)) enter `sonar-scanner` and press enter. You will see an output like this:
 
-https://gist.github.com/tdshipley/3c176fd45c8a9e7a092d7e3b332eaf63
+```
+My-MacBook-Pro:kotlin thomas$ sonar-scanner
+<Redacted for brevity>
+INFO: ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/4a27fa8c666747f6956d75ae63fb24b9
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AWbpY5h5xoaTc7Huvu3D
+INFO: Task total time: 4.403 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 5.628s
+INFO: Final Memory: 11M/50M
+INFO: ------------------------------------------------------------------------
+```
 
 Once completed your results will be in the SonarQube dashboard by following the link. Now start to play around with SonarQube and your team's projects!
 

@@ -28,6 +28,23 @@ If you take a look at the [Tasks.json schema](https://code.visualstudio.com/docs
 
 So in a task add an options object with a cwd property which points to the folder containing your gulp file - an example is below:
 
-https://gist.github.com/tdshipley/3aac9d8278057f6a0cf5
+```json
+{
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+    "options": {
+        "cwd": "${workspaceRoot}/src/MyProject"
+    },
+    "tasks": [
+        {
+            "taskName": "dnu-build",
+            "isBuildCommand": true,
+            "showOutput": "always",
+            "isWatching": true
+        }
+    ]
+}
+```
 
 Now, this gulp task will be assigned to Shift-Ctrl-B and run within the working directory of ./src/MyProject using the gulp file within that folder.

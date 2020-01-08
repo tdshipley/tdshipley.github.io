@@ -25,7 +25,35 @@ XUnit doesn't include a TearDown attribute to create TearDown methods because th
 
 _(Credit: http://jamesnewkirk.typepad.com/posts/2007/09/why-you-should-.html)_
 
-https://gist.github.com/tdshipley/edabf4b7ff690e420e26
+```csharp
+[TestFixture]
+public class MyTests
+{
+    [SetUp]
+    public void BeforeTest()
+    {
+      Console.WriteLine("BeforeTest");
+    }
+
+    [TearDown]
+    public void AfterTest()
+    {
+        Console.WriteLine("AfterTest");
+    }
+
+    [Test]
+    public void Test1()
+    {
+        Console.WriteLine("Test1");
+    }
+
+    [Test]
+    public void Test2()
+    {
+        Console.WriteLine("Test2");
+    }
+}
+```
 
 I agree that Setup and TearDown are a bad idea when used for reducing code duplication between tests. There have been many times on a project where I personally have had to dig around multiple files because the actual definition of the test is scattered across them. It is much easier to duplicate things like console outputs and creating objects to test against. A good rule might be:
 
@@ -39,7 +67,36 @@ Following the rule above it is clear that in some cases your tests will still ne
 
 So, in the end, the solution is pretty simple - in your test class just implement IDisposable and in your dispose method do any cleanup work that you need to do:
 
-https://gist.github.com/tdshipley/c75579a87b78c2f6d848f6fcdf31a5e1
+```csharp
+public class TruthTests : IDisposable
+{
+    public TruthTests()
+    {
+    }
+
+    public void Dispose()
+    {
+        //Do cleanup actions here
+        //
+        // e.g.
+        // 
+        // var database = new Database();
+        // database.reset();
+    }
+
+    [Fact]
+    public void TrueEqualsTrue()
+    {
+        Assert.Equal(true, true);
+    }
+    
+    [Fact]
+    public void TrueDoesNotEqualFalse()
+    {
+        Assert.NotEqual(true, false);
+    }
+}
+```
 
 By implementing the IDisposable interface above there is now a hook we can use - the _Dispose()_ method which can be used to clean up after every test. The [XUnit Documentation](https://xunit.github.io/docs/shared-context.html) has more examples for different scenarios.
 

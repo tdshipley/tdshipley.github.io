@@ -36,7 +36,19 @@ The first step is to update your project.json dependencies to get some nuget pac
 
 If you haven't already ensured you have an _ef _command listed in your commands object - this is used when running entity framework commands via a command prompt.
 
-https://gist.github.com/tdshipley/85868bb2b332ef2316e5
+```json
+{
+    "dependencies": {
+        "EntityFramework.Sqlite": "7.0.0-rc1-final",
+        "EntityFramework.Commands": "7.0.0-rc1-final",
+        "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc1-final"
+    },
+    "commands": {
+        "web": "Microsoft.AspNet.Server.Kestrel --server.urls=http://*:9000/",
+        "ef": "EntityFramework.Commands"
+    }
+}
+```
 
 ### Create Models to Represent Tables in the Database
 
@@ -50,7 +62,24 @@ Again this isn't specific but creates a DBContext which represents the propertie
 
 The final part of the setup is to let ASP.NET core know you want to use EF Core with SQLite you can do this by adding it as a service to ConfigureServices in Startup.cs with your context passed in as a generic type:
 
-https://gist.github.com/tdshipley/2a5f80a4b375864578df
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    // Add framework services.
+    services.AddApplicationInsightsTelemetry(Configuration);
+    services.AddMvc();
+
+    // Add SQLite DB using EF Core
+    var path = PlatformServices.Default.Application.ApplicationBasePath;
+    var connection = $"Filename={Path.Combine(path, "mydb.db")}";
+
+    services.AddEntityFramework()
+        .AddSqlite()
+        .AddDbContext<MyDBContext>(
+            options =>
+                { options.UseSqlite(connection); });
+}
+```
 
 The code is conceptually straightforward it defines where the SQLite database file is on the file system and passes that information to EF when it is added to the services the ASP.NET application consumes.
 

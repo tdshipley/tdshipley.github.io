@@ -13,7 +13,12 @@ Go supports JSON via its standard libraries. However, it does not support YAML 
 
 It is useful to have a high-level understanding of how GO supports JSON before diving into YAML. The first thing you need to do is model your data as a struct:
 
-https://gist.github.com/tdshipley/e5805738cc54d0a12ddd
+```go
+type Person struct {
+  Name string `json:"name"`
+  Age int `json:"age"`
+}
+```
 
 Notice how there is a string with some metadata for each field. This tells Go what each field is named in your JSON. After this, you can include the encoding/JSON library you get a whole host of functions including:
 
@@ -26,7 +31,13 @@ Notice how there is a string with some metadata for each field. This tells Go wh
 
 It is a shame that YMAL is not supported by Go as part of the standard libraries but it can be easily added by a third party library called [go-yaml](https://github.com/go-yaml/yaml). Firstly it needs to be included in your project:
 
-https://gist.github.com/tdshipley/64bebe12736a75003f0f
+```go
+package main
+
+import (
+  "gopkg.in/yaml.v2"
+)
+```
 
 You, of course, need the library installed locally on your machine - enter and run this at the command line:
 
@@ -34,11 +45,41 @@ You, of course, need the library installed locally on your machine - enter and 
 
 Once you have done this you are ready to get started. Nicely the library tries to be as similar to the standard lib for JSON as possible. First, update your struct:
 
-https://gist.github.com/tdshipley/9d87c1c1b96b67a80053
+```go
+type Person struct {
+  Name string `yaml:"name"`
+  Age int `yaml:"age"`
+}
+```
 
 Notice the only change is in the metadata. Now it specifies YAML and not JSON, but the intent is the same. What name does the field have in the YAML? To interact with it there is a marshal and unmarshal function:
 
-https://gist.github.com/tdshipley/8e4f626551e9be06e4dc
+```go
+package main
+
+import (
+  "gopkg.in/yaml.v2"
+)
+
+var data = `
+- name: 'Thomas'
+- age: 25
+`
+type Person struct {
+  Name string `yaml:"name"`
+  Age int `yaml:"age"`
+}
+
+func main() {
+  person := Person{}
+  
+  // Read the YAML data into a struct instance called person
+  err := yaml.Unmarshal([]byte(data), &person)
+  
+  // Covert the person struct variable into a json variable called personJSON
+  personJSON, err := yaml.Marshal(&person)
+}
+```
 
 Above is a complete example. The lib is imported and a struct called _Person_ created. Then in the main function, a _person_ variable is instantiated to the type _Person_ - a struct object.
 

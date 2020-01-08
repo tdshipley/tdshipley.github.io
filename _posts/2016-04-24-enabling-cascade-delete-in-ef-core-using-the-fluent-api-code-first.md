@@ -22,4 +22,21 @@ Compared with the definition of cascade:
 
 If you have created your database using Code First then the fix is simple. When defining your relationships tell EF that you want the delete action to be a cascade one. This needs the use of an additional using _Microsoft.Data.Entity.Metadata _which contains _DeleteBehaviour_:
 
-https://gist.github.com/tdshipley/10e982fd9469d7cf76e0461bbd11177f
+```csharp
+using Microsoft.Data.Entity;
+using Microsoft.Data.Entity.Metadata;
+
+public class MyDBContext : DBContext
+{
+    public DbSet<Blog> Blog { get; set; }
+    public DbSet<Post> Posts { get; set; }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Post>()
+        .HasOne(p => p.Blog)
+        .WithMany(b => b.Posts)
+        .OnDelete(DeleteBehavior.Cascade);
+    }
+}
+```

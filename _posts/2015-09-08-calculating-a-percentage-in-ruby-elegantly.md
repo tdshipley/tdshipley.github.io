@@ -10,13 +10,24 @@ tags:
 ---
 In a recent project it would have been handy to write some ruby code which looked like:
 
-https://gist.github.com/tdshipley/a5d3e8bcb75938ae009e
+```ruby
+10.percentage_of 100 # => 10
+```
 
 When searching through the ruby libraries there wasn't any indication it existed. Wanting to avoid a class method - a quick google turned up this StackOverflow post - [Calculate percentage in ruby](http://stackoverflow.com/questions/3668345/calculate-percentage-in-ruby){.question-hyperlink}.
 
 It presents a nice solution to the problem (one I should have thought of!). Create a class called Numeric and add the method to it:
 
-https://gist.github.com/tdshipley/288160b4c8d0c5ab084e
+```ruby
+# Taken from http://stackoverflow.com/questions/3668345/calculate-percentage-in-ruby
+class Numeric
+  def percent_of(n)
+    self.to_f / n.to_f * 100.0
+  end
+end
+
+1.percent_of 10    # => 10.0  (%)
+```
 
 Now a number object has a method called _percent_of _which takes itself and another number as an argument to calculate the percentage.
 

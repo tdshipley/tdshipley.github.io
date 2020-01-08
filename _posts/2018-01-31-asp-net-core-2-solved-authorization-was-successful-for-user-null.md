@@ -10,13 +10,27 @@ categories:
 ---
 While I was migrating an ASP.NET Core 1 project to version 2 my authentication code stopped working. After some investigation I kept running across this info message in my application logs which seemed unusual:
 
-https://gist.github.com/tdshipley/35c2fc7a12ff59eb216a8d4268a383c4
+```
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+Authorization was successful for user: (null).
+```
 
 # The Fix
 
 Turns out this is a simple issue to fix. Just make sure that in the _Configure() _method in the _Startup_ class contains a call to _app.UseAuthentication()_ before the call to _app.UseMvc()_ for example:
 
-https://gist.github.com/tdshipley/fcee610744e51fed2dc11eef379caebf
+```csharp
+// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+{
+    loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+    loggerFactory.AddDebug();
+
+    app.UseStaticFiles();
+    app.UseAuthentication();
+    app.UseMvc();
+}
+```
 
 With this method updated to include the Authentication middleware, the issue should be resolved.
 
