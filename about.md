@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Thomas Shipley
+title: About
 permalink: /about/
 ---
 ## Writing Code to Help Developers Learn More About there Own
@@ -18,6 +18,7 @@ remind myself in the future when I forget things I have done but
 also help you and your team.
 
 ![Me at the Equal Experts Conference 2019](/assets/img/2019/05/DSC_1122.jpg)
+_Me at the Equal Experts Conference 2019_
 
 ## Notable Past Projects
 
@@ -40,3 +41,4 @@ Working at John Lewis.
   
 
 ![Credits from Forza Horizon 2](/assets/img/2015/06/10320914_10152286990287251_1792010311105007939_o.jpg)
+_Credits from Forza Horizon 2_
