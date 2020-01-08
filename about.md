@@ -3,13 +3,13 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-## Writing Code to Help Developers Learn More About there Own
+## Writing Code to Help Developers Learn More About their Own
 
 __My career is focused on understanding what others in a team are doing.__ The impacts
-of code change developers make, features BA's plan and managing expectations of product
+of code changes developers make, features BA's plan and managing expectations of product
 owners. However, most of my time is spent with the developers.
 
-With developers, I write code to hopefully make there lives easier. It could be helping
+With developers, I write code to hopefully make their lives easier. It could be helping
 understand functional changes to a UI or non-functional changes such as performance or
 API contract changes.
 

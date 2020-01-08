@@ -17,7 +17,7 @@ title: Thomas Shipley
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   QA Contractor in London.
-  Writing code to help developers learn more about there own.
+  Writing code to help developers learn more about their own.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tomdrivendev
