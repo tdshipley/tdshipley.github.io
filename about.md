@@ -19,14 +19,14 @@ also help you and your team.
 
 ![Me at the Equal Experts Conference 2019](/assets/img/2019/05/DSC_1122.jpg)
 
-# Notable Past Projects
+## Notable Past Projects
 
-## Current
+### Current
 
 [Equal Experts](https://www.equalexperts.com/) as a Senior QA Consultant.
 Working at John Lewis.
 
-## Past
+### Past
 
   * [Just Eat](https://www.just-eat.co.uk/) leading the QA process for the order team 
   in the UK and international markets. As well as leading internal Hackathons and Workshops.
