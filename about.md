@@ -19,7 +19,7 @@ also help you and your team.
 ![Me at the Equal Experts Conference 2019](/assets/img/2019/05/DSC_1122.jpg)
 _Me at the Equal Experts Conference 2019_
 
-## Notable Past Projects
+## Notable Projects
 
 ### Current
 
