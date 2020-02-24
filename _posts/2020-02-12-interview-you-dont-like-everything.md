@@ -8,7 +8,7 @@ categories:
 tags:
   - interviews
 ---
-## Lego Got It Wrong and That is OK
+## The Lego Movie Got It Wrong and That is OK
 
 Everything is _not_ awesome (despite the catchy [song](https://www.youtube.com/watch?v=9cQgQIMlwWw)) and you don't like every QA tool or technology you have ever worked with and neither do I, at least not completely.
 
