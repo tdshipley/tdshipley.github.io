@@ -14,8 +14,9 @@ Upcoming and previous dates are listed below with links to the slides. The slide
 
 | Event                                              | Date       |                                  |
 | -------------------------------------------------- | ---------- |----------------------------------|
-| [London Tester Gathering](https://bit.ly/2VqyYpV)  | 25/02/2020 | [Slides](https://bit.ly/2Vqog2E) |
-| [Nordic Testing Days 2020](https://bit.ly/2vcz0Ho) | 05/06/2020 |                                  |
+| [London Tester Gathering](http://bit.ly/3955bXU)   | 25/02/2020 | [Slides](http://bit.ly/2TmIgAq)  |
+| [TAQFull](http://bit.ly/2VqiLRz)                   | 26/03/2020 |                                  |
+| [Nordic Testing Days 2020](http://bit.ly/32wn3rY)  | 05/06/2020 |                                  |
 
 ### Details
 
@@ -31,4 +32,4 @@ A better approach is Consumer-Driven Contract testing. Here we use the output of
 This talk will introduce you to the Pact framework to write these tests and the key concepts.
 You will be able to avoid that integration test pack and have more time for other test activities in your team.
 
-![Speaking at London Tester Gathering](/assets/img/events/verify_relationships.jpg){:height="80%" width="80%" .center}
+![Speaking at London Tester Gathering](/assets/img/events/verify_relationships.jpg)
