@@ -4,9 +4,7 @@ title: Events
 permalink: /events/
 ---
 
-Seen me speak at a meetup, conference or would like to?
-
-Upcoming and previous dates are listed below with links to the slides. The slides have a references page at the end which isn't covered at the event.
+Upcoming and previous dates are listed below with links to the slides. References are included on a final slide which isn't covered at the event.
 
 ## Verifying Relationships: Consumer-Driven Contract Tests and Microservices
 
