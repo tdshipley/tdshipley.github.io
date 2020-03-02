@@ -16,7 +16,7 @@ Here I write about my experiences helping these teams so I can hopefully
 remind myself in the future when I forget things I have done but
 also help you and your team.
 
-![Me at the Equal Experts Conference 2019](/assets/img/2019/05/DSC_1122.jpg)
+![Me at the Equal Experts Conference 2019](/assets/img/about/me.jpg)
 _Me at the Equal Experts Conference 2019_
 
 ## Notable Projects
