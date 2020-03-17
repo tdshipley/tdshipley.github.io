@@ -13,8 +13,7 @@ Upcoming and previous dates are listed below with links to the slides. Reference
 | Event                                              | Date       |                                  |
 | -------------------------------------------------- | ---------- |----------------------------------|
 | [London Tester Gathering](http://bit.ly/3955bXU)   | 25/02/2020 | [Slides](http://bit.ly/2TmIgAq)  |
-| [TAQFull](http://bit.ly/2VqiLRz)                   | 26/03/2020 |                                  |
-| [Nordic Testing Days 2020](http://bit.ly/32wn3rY)  | 05/06/2020 |                                  |
+| [Nordic Testing Days 2021](http://bit.ly/32wn3rY)  | 2021       |                                  |
 
 ### Details
 
