@@ -5,8 +5,8 @@ permalink: /about/
 ---
 ## Writing Code to Help Developers Learn More About their Own
 
-__My career is focused on understanding what others in a team are doing.__ The impacts
-of features that BA's plan, managing expectations of product owners and changes developers make.
+__My career is focused on understanding what others in a team are doing.__ The impact
+of features that BA's plan, managing the expectations of product owners and analysing changes developers make.
 
 With developers, I write code to hopefully make their lives easier. It could be helping
 understand changes to a UI, performance insights or API contract changes.
