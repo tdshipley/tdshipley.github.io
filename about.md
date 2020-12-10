@@ -22,8 +22,8 @@ _Me at the Equal Experts Conference 2019_
 
 ### Current
 
-[Equal Experts](https://www.equalexperts.com/) as a Senior QA Consultant.
-Working at John Lewis.
+[Equal Experts](https://www.equalexperts.com/) as a QA Lead Consultant.
+Working at HMRC.
 
 ### Past
 
