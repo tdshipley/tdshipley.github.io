@@ -16,7 +16,7 @@ all sound a little less Agile and a bit more Waterfall?
 
 Ideas such as Shift Left, Continuous Integration and DevOps are increasingly popular. Their popularity
 stems from early feedback, sharing knowledge and ownership between team members. Yet Agile software
-teams continue to treat QA concerns as a sperate stage owned by different people. All the benefits of
+teams continue to treat QA concerns as a separate stage owned by different people. All the benefits of
 the Agile ways of working above give us are lost. QA team members provide feedback after the task,
 hoarding knowledge and being passed ownership of quality.
 
