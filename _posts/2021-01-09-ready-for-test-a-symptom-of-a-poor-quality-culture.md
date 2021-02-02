@@ -4,9 +4,13 @@ date: 2021-01-09T12:31:32+01:00
 author: Thomas
 layout: post
 categories:
-  - REPLACE ME
+  - leadership
+  - team-culture
+  - soft-skills
 tags:
-  - REPLACE ME
+  - leadership
+  - team-culture
+  - soft-skills
 ---
 The Ready for Test column on your JIRA/Agile/Kanban/Whatever process feels safe, doesn't it?
 It is a well-known column and on the surface seems to follow nicely with how tickets are worked on.
