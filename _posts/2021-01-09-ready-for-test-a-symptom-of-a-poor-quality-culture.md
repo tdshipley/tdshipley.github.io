@@ -5,8 +5,6 @@ author: Thomas
 layout: post
 categories:
   - leadership
-  - team-culture
-  - soft-skills
 tags:
   - leadership
   - team-culture
