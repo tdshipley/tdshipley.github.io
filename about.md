@@ -22,11 +22,13 @@ _Me at the Equal Experts Conference 2019_
 
 ### Current
 
-[Equal Experts](https://www.equalexperts.com/) as a QA Lead Consultant.
-Working at HMRC.
+[ECS Digital](https://ecs.co.uk/digital-engineering/) as a Delivery Consultant.
+Working for clients in a Test Architect role.
 
 ### Past
 
+  * [Equal Experts](https://www.equalexperts.com/) as a QA Lead Consultant.
+  Working for Clients HMRC and John Lewis.
   * [Just Eat](https://www.just-eat.co.uk/) leading the QA process for the order team 
   in the UK and international markets. As well as leading internal Hackathons and Workshops.
   * [DataSift](http://datasift.com) a big data platform consuming social media data
