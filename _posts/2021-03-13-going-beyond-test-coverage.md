@@ -78,7 +78,7 @@ working tests are.
 
 > It is better to have a test suite that has failures in its execution than a 100% pass rate.
 
-Worse than an unreliable test is a test that always passes or potentially missing defects. Every time
+Worse than an unreliable test is a test that always passes so potentially missing defects. Every time
 you raise a defect ask the question should the automated tests have caught this? If the answer is yes
 and the test exists then note it down. Start to track how many times a test misses a defect.
 
