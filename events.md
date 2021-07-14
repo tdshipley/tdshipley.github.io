@@ -6,6 +6,22 @@ permalink: /events/
 
 Upcoming and previous dates are listed below with links to the slides. References are included on a final slide which isn't covered at the event.
 
+## Ready for Test - a Symptom of a Poor Quality Culture
+
+### Dates
+
+| Event                                                             | Date       |                                                                       |
+| ----------------------------------------------------------------- | ---------- |-----------------------------------------------------------------------|
+| [CTM: Continuous Testing Meetup London](https://bit.ly/3kn0pO1)   | 30/06/2021 | [Slides](https://bit.ly/3B1wFMw)                                      |
+
+### Details
+
+The Ready for Test column on our boards feels safe, doesn’t it? A well-known column with a clear purpose, at least that is how it might seem. But what if this column is doing more harm than good in your team?
+
+Ideas such as Shift Left and Continuous Integration are increasingly popular. This popularity stems from early feedback, sharing knowledge and ownership between team members. Yet Agile software teams continue to treat QA concerns as a separate stage owned by different people. QA team members provide feedback after the task, hoarding knowledge and being passed the ownership of quality.
+
+In this talk, I want to convince you that in a lot of cases Ready for Test, In QA and other quality gate columns do more harm than good. They contribute to a culture of separation between QAs and other team members. This separation causes quality to decrease. There is a better way.
+
 ## Verifying Relationships: Consumer-Driven Contract Tests and Microservices
 
 ### Dates
