@@ -1,9 +1,9 @@
 ---
 permalink: /about/
 layout: single
+classes: wide
 title: About Me
 ---
-## Writing Code to Help Developers Learn More About their Own
 
 __My career is focused on understanding what others in a team are doing.__ The impact
 of features that BA's plan, managing the expectations of product owners and analysing changes developers make.

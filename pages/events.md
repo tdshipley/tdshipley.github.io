@@ -1,6 +1,7 @@
 ---
 permalink: /events/
 layout: single
+classes: wide
 title: Events
 ---
 
