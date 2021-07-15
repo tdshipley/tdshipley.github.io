@@ -24,19 +24,46 @@ twitter_username: tomdrivendev
 github_username:  tdshipley
 google_analytics: UA-113868772-2
 
+#defaults:
+#  - scope:
+#      path: "assets/images"
+#    values:
+#      image: true
+
 defaults:
+# _pages
   - scope:
-      path: "assets/images"
+      path: ""
+      type: pages
     values:
-      image: true
+      layout: single
+      author_profile: true
+# _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: minimal-mistakes-jekyll
+
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-include-cache
+
+paginate: 5
+paginate_path: /blog/page:num/
+
+timezone: Europe/London
+locale: "en-GB"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

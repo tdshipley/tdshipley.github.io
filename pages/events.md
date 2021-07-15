@@ -1,7 +1,7 @@
 ---
+permalink: /events/
 layout: single
 title: Events
-permalink: /events/
 ---
 
 Upcoming and previous dates are listed below with links to the slides. References are included on a final slide which isn't covered at the event.

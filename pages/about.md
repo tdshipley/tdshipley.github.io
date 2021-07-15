@@ -1,7 +1,7 @@
 ---
+permalink: /about/
 layout: single
 title: About Me
-permalink: /about/
 ---
 ## Writing Code to Help Developers Learn More About their Own
 
