@@ -1,7 +1,7 @@
 ---
 title: Contract Testing with Pact in .NET Core
 date: 2018-03-13T17:07:18+00:00
-author: Thomas
+
 layout: single
 categories:
   - .NET Core

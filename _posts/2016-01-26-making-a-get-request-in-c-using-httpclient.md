@@ -1,7 +1,7 @@
 ---
 title: 'Making a GET Request in C# using HttpClient'
 date: 2016-01-26T09:33:08+00:00
-author: Thomas
+
 layout: single
 categories:
   - 'C#'

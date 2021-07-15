@@ -1,7 +1,7 @@
 ---
 title: Creating a Visual Studio Code Task for Building a .NET Core Project
 date: 2016-03-20T13:18:32+00:00
-author: Thomas
+
 layout: single
 categories:
   - .NET Core

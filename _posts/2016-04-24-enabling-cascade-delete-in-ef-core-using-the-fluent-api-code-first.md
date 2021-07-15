@@ -1,7 +1,7 @@
 ---
 title: Enabling Cascade Delete in EF Core Code First DB Using the Fluent API
 date: 2016-04-24T19:50:02+01:00
-author: Thomas
+
 layout: single
 categories:
   - .NET Core

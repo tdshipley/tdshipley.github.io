@@ -1,7 +1,7 @@
 ---
 title: Finding Lost Commit History using the GitHub API
 date: 2015-06-17T17:23:28+01:00
-author: Thomas
+
 layout: single
 categories:
   - Git

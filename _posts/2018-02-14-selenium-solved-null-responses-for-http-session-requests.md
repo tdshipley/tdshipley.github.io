@@ -1,7 +1,7 @@
 ---
 title: 'Selenium Solved: Null Responses for HTTP Session Requests'
 date: 2018-02-14T09:00:59+00:00
-author: Thomas
+
 layout: single
 categories:
   - .NET Core

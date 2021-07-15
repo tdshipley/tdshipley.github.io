@@ -1,7 +1,7 @@
 ---
 title: Visualising API Performance Results With GCP BigQuery and Google Sheets
 date: 2020-01-15T15:17:49+01:00
-author: Thomas
+
 layout: single
 categories:
   - performance

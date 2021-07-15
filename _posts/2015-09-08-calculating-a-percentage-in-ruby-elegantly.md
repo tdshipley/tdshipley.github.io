@@ -1,7 +1,7 @@
 ---
 title: Calculating a Percentage in Ruby Elegantly
 date: 2015-09-08T09:00:29+01:00
-author: Thomas
+
 layout: single
 categories:
   - Ruby

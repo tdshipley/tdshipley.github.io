@@ -1,7 +1,7 @@
 ---
 title: Ignoring Folders During Compilation in a ASP.NET Core RC2 Project
 date: 2016-05-23T15:39:12+01:00
-author: Thomas
+
 layout: single
 categories:
   - .NET Core

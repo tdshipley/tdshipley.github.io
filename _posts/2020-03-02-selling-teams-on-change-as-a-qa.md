@@ -1,7 +1,7 @@
 ---
 title: Selling Teams on Change As a QA
 date: 2020-03-02T15:21:31+01:00
-author: Thomas
+
 layout: single
 categories:
   - change

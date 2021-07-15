@@ -1,7 +1,7 @@
 ---
 title: 'Quickstart: Try Static Analysis with SonarQube and Docker'
 date: 2018-11-06T14:51:34+00:00
-author: Thomas
+
 layout: single
 categories:
   - SonarQube

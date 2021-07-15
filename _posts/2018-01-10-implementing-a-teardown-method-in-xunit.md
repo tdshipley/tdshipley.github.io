@@ -1,7 +1,7 @@
 ---
 title: Implementing a Teardown Method in XUnit
 date: 2018-01-10T16:14:38+00:00
-author: Thomas
+
 layout: single
 categories:
   - .NET Core

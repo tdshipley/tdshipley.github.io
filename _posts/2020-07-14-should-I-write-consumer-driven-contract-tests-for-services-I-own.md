@@ -1,7 +1,7 @@
 ---
 title: Should I Write Consumer-Driven Contract Tests for Services I Own?
 date: 2020-07-14T12:31:32+01:00
-author: Thomas
+
 layout: single
 categories:
   - pact

@@ -1,7 +1,7 @@
 ---
 title: Going Beyond Test Coverage
 date: 2021-03-11T15:31:32+01:00
-author: Thomas
+
 layout: single
 categories:
   - automated-test

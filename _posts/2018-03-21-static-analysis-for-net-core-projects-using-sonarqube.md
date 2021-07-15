@@ -1,7 +1,7 @@
 ---
 title: Static Analysis for .NET Core Projects using SonarQube
 date: 2018-03-21T13:54:00+00:00
-author: Thomas
+
 layout: single
 categories:
   - .NET Core
