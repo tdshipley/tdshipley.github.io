@@ -2,7 +2,7 @@
 title: Setting Up SQLite and Entity Framework Core in ASP.Net Core
 date: 2016-03-24T13:40:33+00:00
 author: Thomas
-layout: post
+layout: single
 categories:
   - .NET Core
   - 'C#'

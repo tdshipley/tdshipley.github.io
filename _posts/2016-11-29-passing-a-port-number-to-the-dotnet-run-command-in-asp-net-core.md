@@ -2,7 +2,7 @@
 title: Specifying a Port Number to the dotnet run Command in ASP.Net Core
 date: 2016-11-29T16:46:19+00:00
 author: Thomas
-layout: post
+layout: single
 categories:
   - .NET Core
 ---

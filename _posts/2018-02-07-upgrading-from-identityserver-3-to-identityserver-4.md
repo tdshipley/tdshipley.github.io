@@ -2,7 +2,7 @@
 title: Upgrading From IdentityServer 3 to IdentityServer 4
 date: 2018-02-07T09:00:45+00:00
 author: Thomas
-layout: post
+layout: single
 categories:
   - .NET Core
   - asp.net core

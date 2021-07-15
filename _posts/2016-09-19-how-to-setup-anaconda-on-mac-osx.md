@@ -2,7 +2,7 @@
 title: How to Setup Anaconda on Mac OSX
 date: 2016-09-19T17:04:31+01:00
 author: Thomas
-layout: post
+layout: single
 categories:
   - Python
 ---

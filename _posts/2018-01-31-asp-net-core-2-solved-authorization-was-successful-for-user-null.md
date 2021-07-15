@@ -2,7 +2,7 @@
 title: 'ASP.NET Core 2 Solved: Authorization was successful for user: (null).'
 date: 2018-01-31T09:00:17+00:00
 author: Thomas
-layout: post
+layout: single
 categories:
   - .NET Core
   - asp.net core

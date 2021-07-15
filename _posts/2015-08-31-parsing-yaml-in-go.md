@@ -2,7 +2,7 @@
 title: Parsing YAML in GO
 date: 2015-08-31T23:33:55+01:00
 author: Thomas
-layout: post
+layout: single
 categories:
   - Go
 tags:
