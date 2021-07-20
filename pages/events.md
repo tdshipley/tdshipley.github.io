@@ -13,7 +13,7 @@ Upcoming and previous dates are listed below with links to the slides. Reference
 
 | Event                                                             | Date       |                                                                       |
 | ----------------------------------------------------------------- | ---------- |-----------------------------------------------------------------------|
-| [CTM: Continuous Testing Meetup London](https://bit.ly/3kn0pO1)   | 30/06/2021 | [Slides](https://bit.ly/3B1wFMw)                                      |
+| [CTM: Continuous Testing Meetup London](https://bit.ly/3kn0pO1)   | 30/06/2021 | [Slides](https://bit.ly/3B1wFMw), [Recording](https://bit.ly/3iyHInE) |
 
 ### Details
 
