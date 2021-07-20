@@ -27,7 +27,7 @@ _Me at the Equal Experts Conference 2019_
 
 ### Current
 
-[ECS Digital](https://ecs.co.uk/digital-engineering/) as a Delivery Consultant.
+[ECS](https://ecs.co.uk/digital-engineering/) as a Delivery Consultant.
 Currently working with HSBC as a Testing Practice Lead.
 
 ### Past
