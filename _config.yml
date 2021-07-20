@@ -53,10 +53,11 @@ defaults:
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-include-cache
 
 paginate: 5
