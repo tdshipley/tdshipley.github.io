@@ -1,8 +1,8 @@
 ---
 title: Using Go to Recover JPEGs from a Forensic Image
 date: 2015-06-19T17:22:57+01:00
-author: Thomas
-layout: post
+
+layout: single
 categories:
   - Forensics
   - Go

@@ -1,8 +1,8 @@
 ---
 title: Introducing Machine Learning for QA Engineers
 date: 2018-01-24T09:00:47+00:00
-author: Thomas
-layout: post
+
+layout: single
 categories:
   - machine learning
   - qa

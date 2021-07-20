@@ -1,0 +1,17 @@
+Thomas Shipley:
+  name        : "Thomas Shipley"
+  bio         : "Delivery Consultant. Coaching teams to test better, together. Espresso addict. Part-time Cookie Dough aficionado."
+  avatar      : "/assets/img/profile/me-zoom.jpeg"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/tomdrivendev"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tdshipley"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tshipley/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:hello@tomdriven.dev"

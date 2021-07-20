@@ -1,8 +1,8 @@
 ---
 title: Ready for Test - a Symptom of a Poor Quality Culture 
 date: 2021-01-09T12:31:32+01:00
-author: Thomas
-layout: post
+
+layout: single
 categories:
   - leadership
 tags:

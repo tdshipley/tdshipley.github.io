@@ -1,8 +1,8 @@
 ---
 title: QA Interview Tip - Everything is Not Awesome
 date: 2020-02-12T09:18:32+01:00
-author: Thomas
-layout: post
+
+layout: single
 categories:
   - interviewing
 tags:

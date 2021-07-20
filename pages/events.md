@@ -1,7 +1,8 @@
 ---
-layout: page
-title: Events
 permalink: /events/
+layout: single
+classes: wide
+title: Events
 ---
 
 Upcoming and previous dates are listed below with links to the slides. References are included on a final slide which isn't covered at the event.

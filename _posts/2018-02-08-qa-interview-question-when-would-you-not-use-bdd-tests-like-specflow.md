@@ -1,8 +1,8 @@
 ---
 title: 'QA Interview Question: When Would You Not Use BDD Tests Like Specflow?'
 date: 2018-02-08T16:52:59+00:00
-author: Thomas
-layout: post
+
+layout: single
 categories:
   - interview
   - qa

@@ -1,8 +1,8 @@
 ---
 title: Introduction to Automated Security Testing with OWASP Zap, Dependency Checker and Glue.
 date: 2019-04-09T17:44:49+01:00
-author: Thomas
-layout: post
+
+layout: single
 categories:
   - Uncategorised
 tags:

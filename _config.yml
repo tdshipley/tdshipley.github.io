@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Thomas Shipley
+title: Tom Driven Dev
+author: Thomas Shipley
 email: hello@tomdriven.dev
 description: >- # this means to ignore newlines until "baseurl:"
   QA Consultant.
@@ -22,19 +23,74 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tomdrivendev
 github_username:  tdshipley
-google_analytics: UA-113868772-2
+
+#defaults:
+#  - scope:
+#      path: "assets/images"
+#    values:
+#      image: true
 
 defaults:
+# _pages
   - scope:
-      path: "assets/images"
+      path: ""
+      type: pages
     values:
-      image: true
+      layout: single
+      author_profile: true
+# _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes-jekyll
+
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+paginate: 5
+paginate_path: /blog/page:num/
+
+timezone: Europe/London
+locale: "en-GB"
+
+masthead_title: " "
+logo: "/assets/img/logo.png"
+
+search: true
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-113868772-2"
+    anonymize_ip: false # default
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/tomdrivendev"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tdshipley"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tshipley/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:hello@tomdriven.dev"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

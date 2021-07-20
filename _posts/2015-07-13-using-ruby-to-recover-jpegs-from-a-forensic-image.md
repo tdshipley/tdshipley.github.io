@@ -1,8 +1,8 @@
 ---
 title: Using Ruby to Recover JPEGs from a Forensic Image
 date: 2015-07-13T22:22:28+01:00
-author: Thomas
-layout: post
+
+layout: single
 categories:
   - Forensics
   - Ruby
