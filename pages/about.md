@@ -10,7 +10,7 @@ managing the expectations of product owners and analysing development changes.
 
 By asking questions of a team I can better understand the impacts of these changes. Understanding more I begin to
 coach teams. Sharing my expertise in testing with the team so they can start thinking more like testers themselves.
-__I pair, mentor, promote and persuade towards my goal of shared quality ownership.__ Sometimes
+__I mentor, pair, persuade and promote towards my goal of shared quality ownership.__ Sometimes
 this is challenging but often worth it!
 
 If you are a QA I hope you find the site and its content useful, in coaching your team.
