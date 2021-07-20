@@ -2,18 +2,23 @@
 permalink: /about/
 layout: single
 classes: wide
-title: About Me
+title: I Work in Quality ~~Assurance~~ Advocacy
 ---
 
-__My career is focused on understanding what others in a team are doing.__ The impact
-of features that BA's plan, managing the expectations of product owners and analysing changes developers make.
+__My career is focused on understanding what others in a team are doing.__ The impact of planned work,
+managing the expectations of product owners and analysing development changes.
 
-With developers, I write code to hopefully make their lives easier. It could be helping
-understand changes to a UI, performance insights or API contract changes.
+By asking questions of a team I can better understand the impacts of these changes. Understanding more I begin to
+coach teams. Sharing my expertise in testing with the team so they can start thinking more like testers themselves.
+__I pair, mentor, promote and persuade towards my goal of shared quality ownership.__ Sometimes
+this is challenging but often worth it!
 
-Here I write about my experiences helping these teams so I can hopefully
-remind myself in the future when I forget things I have done but
-also help you and your team.
+If you are a QA I hope you find the site and its content useful, in coaching your team.
+If not, please think about the ideas on this site.
+Discuss them with your team or QA to see if they are right for you.
+
+Any comments or questions do contact me on [Twitter](https://twitter.com/tomdrivendev)
+or [email](mailto:hello@tomdriven.dev).
 
 ![Me at the Equal Experts Conference 2019](/assets/img/about/me.jpg)
 _Me at the Equal Experts Conference 2019_
@@ -23,7 +28,7 @@ _Me at the Equal Experts Conference 2019_
 ### Current
 
 [ECS Digital](https://ecs.co.uk/digital-engineering/) as a Delivery Consultant.
-Working for clients in a Test Architect role.
+Currently working with HSBC as a Testing Practice Lead.
 
 ### Past
 
