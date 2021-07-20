@@ -77,6 +77,21 @@ analytics:
     tracking_id: "UA-113868772-2"
     anonymize_ip: false # default
 
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/tomdrivendev"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tdshipley"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tshipley/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:hello@tomdriven.dev"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
