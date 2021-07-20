@@ -286,8 +286,7 @@ DEPENDENCIES
   github-pages (~> 215)
   jekyll-feed (~> 0.15.1)
   jekyll-include-cache
-  minima (~> 2.5.1)
-  minimal-mistakes-jekyll
+  minimal-mistakes-jekyll (~> 4.24.0)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.0)
