@@ -6,7 +6,7 @@ title: I Work in Quality ~~Assurance~~ Advocacy
 ---
 
 __My career is focused on understanding what others in a team are doing.__ The impact of planned work,
-managing the expectations of product owners and analysing development changes.
+managing the expectations of stakeholders and analysing development changes.
 
 By asking questions of a team I can better understand the impacts of these changes. Understanding more I begin to
 coach teams. Sharing my expertise in testing with the team so they can start thinking more like testers themselves.
