@@ -21,7 +21,7 @@ The Ready for Test column on our boards feels safe, doesn’t it? A well-known c
 
 Ideas such as Shift Left and Continuous Integration are increasingly popular. This popularity stems from early feedback, sharing knowledge and ownership between team members. Yet Agile software teams continue to treat QA concerns as a separate stage owned by different people. QA team members provide feedback after the task, hoarding knowledge and being passed the ownership of quality.
 
-In this talk, I want to convince you that in a lot of cases Ready for Test, In QA and other quality gate columns do more harm than good. They contribute to a culture of separation between QAs and other team members. This separation causes quality to decrease. There is a better way.
+In this talk, I want to convince you that in many cases, Ready for Test, In QA and other quality gate columns do more harm than good. They contribute to a culture of separation between QAs and other team members. This separation causes quality to decrease. There is a better way.
 
 ## Verifying Relationships: Consumer-Driven Contract Tests and Microservices
 
