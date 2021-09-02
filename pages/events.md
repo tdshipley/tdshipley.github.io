@@ -7,6 +7,26 @@ title: Events
 
 Upcoming and previous dates are listed below with links to the slides. References are included on a final slide which isn't covered at the event.
 
+## Creating Test Strategies Teams Will Read
+
+### Dates
+
+| Event                                                             | Date       |                                                                       |
+| ----------------------------------------------------------------- | ---------- |-----------------------------------------------------------------------|
+| [Ministry of Testing](https://bit.ly/3BxNq16)                     | 21/09/2021 |                                                                       |
+
+### Details
+
+Test Strategy is an overloaded term. Some fear multiple pages of formal documents that no one will read. Others want every detail documented formally and tightly version controlled. What is best? More importantly, what is best for your project? The context is the key.
+
+This session dives into the detail of test strategies. Discussing what works well for different project contexts, common strategy types, and how to get your team to read it.
+
+#### Outcomes
+
+* Appreciate the importance of a test strategy.
+* Understand what type of strategy style is best for a project.
+* Increase team engagement with a test strategy.
+
 ## Ready for Test - a Symptom of a Poor Quality Culture
 
 ### Dates
