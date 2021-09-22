@@ -13,7 +13,7 @@ Upcoming and previous dates are listed below with links to the slides. Reference
 
 | Event                                                             | Date       |                                                                       |
 | ----------------------------------------------------------------- | ---------- |-----------------------------------------------------------------------|
-| [Ministry of Testing](https://bit.ly/3BxNq16)                     | 21/09/2021 |                                                                       |
+| [Ministry of Testing](https://bit.ly/3BxNq16)                     | 21/09/2021 | [Slides](https://bit.ly/3AxFxIU)                                      |
 
 ### Details
 
@@ -34,7 +34,7 @@ This session dives into the detail of test strategies. Discussing what works wel
 | Event                                                             | Date       |                                                                       |
 | ----------------------------------------------------------------- | ---------- |-----------------------------------------------------------------------|
 | [CTM: Continuous Testing Meetup London](https://bit.ly/3kn0pO1)   | 30/06/2021 | [Slides](https://bit.ly/3B1wFMw), [Recording](https://bit.ly/3iyHInE) |
-| [2nd. Test Busters Day & Night](https://bit.ly/3Bu7elU)           | 09/09/2021 |                                                                       |
+| [2nd. Test Busters Day & Night](https://bit.ly/3Bu7elU)           | 09/09/2021 | [Slides](https://bit.ly/3u2U9NX)                                      |
 
 ### Details
 
