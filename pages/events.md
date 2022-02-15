@@ -35,6 +35,7 @@ This session dives into the detail of test strategies. Discussing what works wel
 | ----------------------------------------------------------------- | ---------- |-----------------------------------------------------------------------|
 | [CTM: Continuous Testing Meetup London](https://bit.ly/3kn0pO1)   | 30/06/2021 | [Slides](https://bit.ly/3B1wFMw), [Recording](https://bit.ly/3iyHInE) |
 | [2nd. Test Busters Day & Night](https://bit.ly/3Bu7elU)           | 09/09/2021 | [Slides](https://bit.ly/3u2U9NX)                                      |
+| [EuroSTAR 2022 Copenhagen](https://bit.ly/3uZ0zQC)                | 10/06/2022 |                                                                       |
 
 ### Details
 
