@@ -7,6 +7,55 @@ title: Events
 
 Upcoming and previous dates are listed below with links to the slides. References are included on a final slide which isn't covered at the event.
 
+## Moving Cheese: The Art of Persuasion for Testers
+
+### Dates
+
+| Event                                                             | Date       |                                                                       |
+| ----------------------------------------------------------------- | ---------- |-----------------------------------------------------------------------|
+| [CTM: Continuous Testing Meetup London](http://bit.ly/3K77YUd)    | 22/03/2023 | [Slides](http://bit.ly/3Md5G8E), [Recording](http://bit.ly/3K77YUd)
+| [Nordic Testing Days 2023](https://bit.ly/3v24Im5)                | 09/06/2023 |  
+| [EuroSTAR 2023 Antwerp](http://bit.ly/3m2hZKr)                    | 14/06/2023 |         
+| [TestBash UK 2023 Liverpool](http://bit.ly/412pH5Q)               | 21/09/2023 |       
+
+### Details
+
+Picture the scene. You are sitting in a testing conference – TestBash UK perhaps. You have heard a brilliant talk – enthusiastic, engaging, and, more importantly, an idea you can use. But you are concerned. You ask a question.
+
+“Thank you, speaker, for an excellent talk. My question: How can I convince my team to do this?”
+
+The answer leaves you wanting more. Isn’t the art of persuading your team of this brilliant idea worth more than a couple of minutes? You are not alone. It is a common and sometimes frustrating experience. In this talk, I don’t want to discuss a new testing technique or a flash new technology. Instead, I want to focus on people. The people who will not be at the conference. The people who you work with every day. How can I help you convince them of all the new ideas you are bursting to try after an exciting conference? How can you bring the magic back with you? Both as a tester and a consultant, I have spent countless hours introducing and managing change. Helping teams feel safe about taking risks and trying new ideas. Based on my experience with teams and clients, I want to help you:
+
+* Recognize that persuasion is rooted in understanding people and their motivations.
+* Understand why resistance to change is so common and how it can become less scary.
+* Develop your own style of persuasion based on foundational principles.
+* Have the confidence to sometimes bend the rules a little to show the potential of your idea.
+
+Testers have the opportunity to lift their teams through new ideas. But often, we are not let down by our idea, motivation or ability. Persuading others is our downfall. So we don’t talk about it. Let us change that. Attend this session and start the conversation about how we as a community can influence others. Combine that with your great idea, and I believe you will be unstoppable.
+
+## Under Pressure! Performance Testing APIs with K6
+
+### Dates
+
+| Event                                                             | Date       |                                                                       |
+| ----------------------------------------------------------------- | ---------- |-----------------------------------------------------------------------|
+| [Nordic Testing Days 2023](https://bit.ly/3v24Im5)                | 08/06/2023 |     
+
+### Details
+
+Ping! Your phone has an alert - an escalation from support. Website performance has deteriorated, sessions are dropping, and it is late in the evening. So open your laptop and grab a drink. It will be a long night of performance debugging and issue fixing.
+
+I don't want you to have this experience.
+
+Performance testing, in my experience, is a skill many testers don't often get to explore and develop. The result? Reactive support escalations at inconvenient times filled with stress. But we can change that. Join me in this hands-on workshop based on my experience testing performance for clients with load-intensive applications. We will dive deep into performance testing using K6 and JavaScript. You will learn:
+
+* The business case of why performance is so vital to organisations. The cost in user retention and revenue.
+* Models such as RAIL and the Golden Signals, these models help you better understand performance requirements.
+* Write K6 tests using JavaScript against APIs inspired by issues discovered with my clients.
+* Better interpret the results of performance tests to have real actionable insights you can share with your team.
+
+By our working together you will gain confidence in performance testing APIs. A confidence which will help you discover performance issues early. Being proactive addressing them before production incidents occur. More importantly protecting your evening and avoiding that support call.
+
 ## Creating Test Strategies Teams Will Read
 
 ### Dates
