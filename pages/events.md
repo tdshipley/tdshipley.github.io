@@ -106,6 +106,7 @@ In this talk, I want to convince you that in many cases, Ready for Test, In QA a
 | [TAQfull](https://bit.ly/2B21CWA)                                 | 13/08/2020 | [Slides](https://bit.ly/31RB4Ay), [Recording](https://bit.ly/3hhOlZK) |
 | [CTM: Continuous Testing Meetup London](https://bit.ly/3a16Oam)   | 20/08/2020 | [Slides](https://bit.ly/2QcXY08), [Recording](https://bit.ly/3aRttGz) |
 | [Nordic Testing Days 2021](http://bit.ly/32wn3rY)                 | 04/06/2021 |                                                                       |
+| [SauceCon 2022](http://bit.ly/32wn3rY)                            | 06/05/2022 | [Recording](https://www.youtube.com/watch?v=QsLLRtTjIxE&list=PL67l1VPxOnT5GdrfsmqetzEmXvy5SbXAL&index=21&ab_channel=SauceLabs)                                                                      |
 
 ### Details
 
